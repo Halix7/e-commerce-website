@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.orange {
+    color: hsl(26, 100%, 55%)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.orange-back {
+    background-color: hsl(26, 100%, 55%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pale-orange {
+    color: hsl(25, 100%, 94%);
 }
 
-.App-link {
-  color: #61dafb;
+.pale-orange-back {
+    background-color: hsl(25, 100%, 94%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Very-dark-blue {
+    color: hsl(220, 13%, 13%);
+}
+
+.Very-dark-blue-back {
+    background-color: hsl(220, 13%, 13%);
+}
+
+.Dark-grayish-blue {
+    color: hsl(219, 9%, 45%);
+}
+
+.Dark-grayish-blue-back {
+    background-color: hsl(219, 9%, 45%);
+}
+
+.Grayish-blue {
+    color: hsl(221, 20%, 84%);
+}
+
+.Grayish-blue-back {
+    background-color: hsl(220, 14%, 75%);
+}
+
+.white {
+    color: hsl(0, 0%, 100%);
+}
+
+.white-back {
+    background-color: hsl(214, 24%, 94%);
+}
+
+.black {
+    color: hsl(0, 0%, 0%);
+}
+
+.black-back {
+    background-color: hsl(0, 0%, 0%);
+}
+
+.f-family {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.weight-400 {
+    font-weight: 400;
+}
+
+.weight-700 {
+    font-weight: 700;
+}
+
+.p-size {
+    font-size: 16px;
+}
+
+.imgLayout {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    top: 0px;
+    justify-content: center;
+    z-index: 10000;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .85);
+}
+
+.closeImg {
+    position: relative;
+    top: -17.25rem;
+    left: 27rem;
 }

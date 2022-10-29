@@ -1,0 +1,78 @@
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: white;
+}
+
+.hoverStyle li .active::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 90%;
+    background-color: hsl(26, 100%, 55%);
+    right: 1px;
+    bottom: -25px;
+}
+
+.overeffect img:hover:first-child {
+    opacity: 1;
+}
+
+.overeffect img:hover:last-child {
+    border: 3px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+}
+
+.btn-cursor:hover {
+    background-color: hsl(26, 88%, 64%);
+    ;
+}
+
+.imgDesign .product img {
+    max-width: 25rem;
+    border-radius: 12px;
+}
+
+.imgDesign .thumb img {
+    max-width: 5rem;
+    border-radius: 12px;
+}
+
+.nav-hover:hover {
+    opacity: 0.7!important;
+}
+
+.screenBig {
+    display: block;
+}
+
+.screenSmall {
+    display: none;
+}
+
+.screenMain {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 4rem;
+}
+
+@media (max-width:764px) {
+    .hoverStyle li.active:after {
+        display: none;
+    }
+    .screenMain {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:992px) {
+    .screenBig {
+        display: none;
+    }
+    .screenSmall {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
